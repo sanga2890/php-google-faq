@@ -90,7 +90,12 @@ main .faq p {
     font-size: 15px;
     font-weight: 400;
     color: rgba(0,0,0,0.87);
-    line-height: 22px;
+    line-height: 23px;
+}
+
+main a {
+    text-decoration: none;
+    color: #3367d6;
 }
 
 main .faq {
