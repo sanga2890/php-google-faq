@@ -60,24 +60,47 @@ $policies = [
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
         <title>Domande frequenti - Privacy e termini - Google</title>
     </head>
     <body>
 
         <header>
+            <div class="header-left">
+                <div class="header-left-top">
+                    <img src="https://www.100web.it/wp-content/uploads/2015/09/Google-logo-nuovo-2015-articoli-news-100weblog.png" alt="logo">
+                    <span>Privacy e termini</span>
+                </div>
+                <div class="header-left-bottom">
+                    <ul>
+                        <li><a href="#">Introduzione</a></li>
+                        <li><a href="#">Norme sulla privacy</a></li>
+                        <li><a href="#">Termini di servizio</a></li>
+                        <li><a href="#">Tecnologie</a></li>
+                        <li><a class="selected" href="#">Domande frequenti</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="header-right">
+                <img src="img/drugo.png" alt="foto-profilo">
+                <span>miamail@google.com</span>
+            </div>
 
         </header>
 
         <main>
+            <!-- innesto il codice php per stampare il testo nei rispettivi elementi -->
             <div class="container">
                 <?php foreach ($policies as $faq) { ?>
                 <div class="faq">
-                    <h3 class="question">
+                    <h2 class="question">
                         <?php echo $faq['question']; ?>
-                    </h3>
-                    <h4 class="answer">
+                    </h2>
+                    <p class="answer">
                         <?php echo $faq['answer']; ?>
-                    </h4>
+                    </p>
 
                 </div>
                 <?php
