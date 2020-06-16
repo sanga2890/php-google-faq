@@ -107,7 +107,20 @@ $policies = [
                 }
                 ?>
             </div>
-        </main>
+        </main>]
+        <footer>
+            <div class="container footer">
+                <ul>
+                    <li><a href="#">Google</a><span>-</span></li>
+                    <li><a href="#">Tutto su Google</a><span>-</span></li>
+                    <li><a href="#">Privacy</a><span>-</span></li>
+                    <li><a href="#">Termini</a></li>
+                </ul>
+                <select class="lingua" name="scegli-lingua">
+                    <option value="Italiano">Italiano</option>
+                </select>
+            </div>
+        </footer>
 
     </body>
 </html>
